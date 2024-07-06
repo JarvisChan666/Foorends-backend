@@ -28,7 +28,7 @@ jobs:
       - name: Create comment with API
         run: |
           gh api -X POST \
-            http://api.github.com/repo/{ORGANIZATION}/issues/${ISSUE_NUMBER}/comments \
+            http://api.github.com/repo/${{github.repository}}/issues/${{ github.event.issue.number }}/comments \
             -f body='
             Comment from api call not action
           '
