@@ -33,7 +33,7 @@ jobs:
             Comment from api call not action
           '
         env:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          GITHUB_TOKEN: ${{secrets.TOKEN}}
           ORGANIZATION: ${{github.event.organization.login}}
           REPOSITORY: ${{github.event.repository.name}}
           ISSUE_NUMBER: ${{github.event.issue.number}}
