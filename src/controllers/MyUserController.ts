@@ -11,7 +11,6 @@ const createCurrentUser = async (req: Request, res: Response) => {
     const existingUser = await User.findOne({ clerkId });
 
     if (existingUser) {
-                                                                                    
       return res.status(200).send();
     }
 
