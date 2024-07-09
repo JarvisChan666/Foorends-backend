@@ -19,18 +19,7 @@ mongoose
   .connect(process.env.MONGODB_CONNECTION_STRING as string)
   .then(() => console.log("Connected to database!"));
 
-const app: Application = express(); // create express app
-
-// app.get(
-//   '/protected-route',
-//   ClerkExpressWithAuth({
-//     // Add options here
-//     // See the Middleware options section for more details
-//   }),
-//   (req: WithAuthProp<Request>, res: Response) => {
-//     res.json(req.auth);
-//   }
-// );
+export const app: Application = express(); // create express app
 
 // Use middleware
 app.use(
