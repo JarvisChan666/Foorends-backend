@@ -7,13 +7,13 @@ name: "Code scanning"
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
     paths:
-      - 'web/**'
+      - 'src/**'
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
     paths:
-      - 'web/**'
+      - 'src/**'
 
 jobs:
   analyze:
